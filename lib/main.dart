@@ -24,6 +24,7 @@ class CalculatorApp extends StatelessWidget {
                 CalcButton(
                   text: 'AC',
                   fillColor: Color(0xFF6C807F),
+                  textSize: 24,
                 ),
                 CalcButton(
                   text: 'C',
@@ -109,6 +110,7 @@ class CalculatorApp extends StatelessWidget {
                 ),
                 CalcButton(
                   text: '00',
+                  textSize: 26,
                 ),
                 CalcButton(
                   text: '=',
