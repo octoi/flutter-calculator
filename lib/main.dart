@@ -36,7 +36,7 @@ class CalculatorApp extends StatelessWidget {
                   textColor: Color(0xFF65BDAC),
                 ),
                 CalcButton(
-                  text: '/',
+                  text: '÷',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
                 ),
@@ -55,7 +55,7 @@ class CalculatorApp extends StatelessWidget {
                   text: '9',
                 ),
                 CalcButton(
-                  text: '*',
+                  text: '×',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
                 ),
