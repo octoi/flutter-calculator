@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:calculator/widgets/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:math_expressions/math_expressions.dart';
 
 void main() {
   runApp(CalculatorApp());
@@ -35,9 +36,14 @@ class _CalculatorAppState extends State<CalculatorApp> {
   }
 
   void evaluate(String text) {
+    Parser p = Parser();
+    Expression exp = p.parse(_expression);
+    ContextModel cm = ContextModel();
+    double eval = exp.evaluate(EvaluationType.REAL, cm);
+
     setState(() {
       _history = _expression;
-      _expression = 'solved';
+      _expression = eval.toString();
     });
   }
 
@@ -97,7 +103,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   callback: numClick,
                 ),
                 CalcButton(
-                  text: '÷',
+                  text: '/',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
                   callback: numClick,
@@ -120,7 +126,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   callback: numClick,
                 ),
                 CalcButton(
-                  text: '×',
+                  text: '*',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
                   callback: numClick,
