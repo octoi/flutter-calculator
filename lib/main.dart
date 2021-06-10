@@ -20,6 +20,17 @@ class CalculatorApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
+              padding: EdgeInsets.only(right: 12.0),
+              child: Text(
+                '123*1',
+                style: GoogleFonts.rubik(
+                  textStyle: TextStyle(fontSize: 24.0),
+                  color: Color(0xFF545F61),
+                ),
+              ),
+              alignment: Alignment(1, 1),
+            ),
+            Container(
               padding: EdgeInsets.all(12.0),
               child: Text(
                 '123',
@@ -30,7 +41,7 @@ class CalculatorApp extends StatelessWidget {
               ),
               alignment: Alignment(1, 1),
             ),
-            SizedBox(height: 40.0),
+            SizedBox(height: 30.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
