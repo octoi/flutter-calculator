@@ -12,6 +12,15 @@ class CalculatorApp extends StatefulWidget {
 }
 
 class _CalculatorAppState extends State<CalculatorApp> {
+  String _history = '';
+  String _expression = '';
+
+  void numClick(String text) {
+    setState(() {
+      _expression += text;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +36,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
             Container(
               padding: EdgeInsets.only(right: 12.0),
               child: Text(
-                '123*1',
+                _history,
                 style: GoogleFonts.rubik(
                   textStyle: TextStyle(fontSize: 24.0),
                   color: Color(0xFF545F61),
@@ -38,7 +47,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
             Container(
               padding: EdgeInsets.all(12.0),
               child: Text(
-                '123',
+                _expression,
                 style: GoogleFonts.rubik(
                   textStyle: TextStyle(fontSize: 48.0),
                   color: Colors.white,
