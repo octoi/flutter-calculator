@@ -21,6 +21,19 @@ class _CalculatorAppState extends State<CalculatorApp> {
     });
   }
 
+  void allClear(String text) {
+    setState(() {
+      _history = '';
+      _expression = '';
+    });
+  }
+
+  void clear(String text) {
+    setState(() {
+      _expression = '';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -63,12 +76,12 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   text: 'AC',
                   fillColor: Color(0xFF6C807F),
                   textSize: 24,
-                  callback: numClick,
+                  callback: allClear,
                 ),
                 CalcButton(
                   text: 'C',
                   fillColor: Color(0xFF6C807F),
-                  callback: numClick,
+                  callback: clear,
                 ),
                 CalcButton(
                   text: '%',
