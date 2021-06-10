@@ -34,6 +34,13 @@ class _CalculatorAppState extends State<CalculatorApp> {
     });
   }
 
+  void evaluate(String text) {
+    setState(() {
+      _history = _expression;
+      _expression = 'solved';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -186,7 +193,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   text: '=',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
-                  callback: numClick,
+                  callback: evaluate,
                 ),
               ],
             ),
