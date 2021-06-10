@@ -30,6 +30,7 @@ class CalcButton extends StatelessWidget {
         ),
         onPressed: () {},
         color: fillColor,
+        textColor: textColor,
       ),
     );
   }
