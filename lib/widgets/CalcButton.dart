@@ -12,7 +12,7 @@ class CalcButton extends StatelessWidget {
     required this.text,
     this.fillColor = Colors.transparent,
     this.textColor = Colors.white,
-    this.textSize = 24.0,
+    this.textSize = 28.0,
   }) : super(key: key);
 
   @override
