@@ -63,20 +63,24 @@ class _CalculatorAppState extends State<CalculatorApp> {
                   text: 'AC',
                   fillColor: Color(0xFF6C807F),
                   textSize: 24,
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: 'C',
                   fillColor: Color(0xFF6C807F),
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '%',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '÷',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
               ],
             ),
@@ -85,17 +89,21 @@ class _CalculatorAppState extends State<CalculatorApp> {
               children: [
                 CalcButton(
                   text: '7',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '8',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '9',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '×',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
               ],
             ),
@@ -104,17 +112,21 @@ class _CalculatorAppState extends State<CalculatorApp> {
               children: [
                 CalcButton(
                   text: '4',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '5',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '6',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '-',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
               ],
             ),
@@ -123,17 +135,21 @@ class _CalculatorAppState extends State<CalculatorApp> {
               children: [
                 CalcButton(
                   text: '1',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '2',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '3',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '+',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
               ],
             ),
@@ -142,18 +158,22 @@ class _CalculatorAppState extends State<CalculatorApp> {
               children: [
                 CalcButton(
                   text: '.',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '0',
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '00',
                   textSize: 26,
+                  callback: numClick,
                 ),
                 CalcButton(
                   text: '=',
                   fillColor: Colors.white,
                   textColor: Color(0xFF65BDAC),
+                  callback: numClick,
                 ),
               ],
             ),
